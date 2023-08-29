@@ -19,7 +19,7 @@ YeoAndJohnson = function(rawVect, minLambda)
   Lambda = c() #empty vector
   maxLambda=abs(minLambda)
   actualLambda=minLambda
-  piBl = piBloom(indx, length(indx))
+  piBl = piBlom(indx, length(indx))
   qNrm = qnorm(piBl)
   sortedVect= sort(rawVect, decreasing = FALSE)
 

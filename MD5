@@ -1,13 +1,13 @@
-1842f8223e5e937484fe9a71cb8d3591 *DESCRIPTION
-58ddfa5a083f70ca7a64dc6a4785c550 *NAMESPACE
-7f68f8913827a2ef3f7d13f4ccbd3cb1 *R/BoxAndCox.R
-a826aab8e3c64795d39751e15b17b9a8 *R/YeoAndJohnson.R
+8eb114d497e7124e48f3ec269ffe6a4e *DESCRIPTION
+864221570f6b58f96dce9ce6d57877fe *NAMESPACE
+734ba837a84af7a04834cec10dd5845b *R/BoxAndCox.R
+6fe6c1991b9a04f362482b23b86b757e *R/YeoAndJohnson.R
 1ed6e42e5f87d0c9f46d3d41b8a623cc *R/analysCodesLis.R
 1a26219eb23d479a9f739320b9cc370e *R/codeCount.R
 a872b3ddc20b5a65ccff54894064d9d6 *R/loadCodes.R
 f569599a8ace01b202dab001eb24c10a *R/medAbsDev.R
 e782f361499c97f8f09ff79a4b437ebe *R/normMinMax.R
-596d595217bead2d85443db09a743d36 *R/piBloom.R
+da8254a3690908ad8f1add378665a0fa *R/piBlom.R
 1dbb6dd29a321dcd539d1af49b353a8f *R/subCalcBoxAndCox.R
 c018c02cc6a5e10bbf29a903a85f47d0 *R/subCalcYeoAndJohnson.R
 7f0db84e9d09862ff9e589474fe5072c *R/tokenization.R
@@ -25,7 +25,7 @@ c231d651427525f547a2d306d76473db *man/BoxAndCox.Rd
 86a30380e597c2984e448cb853df7fb8 *man/loadCodes.Rd
 57a194c0b1d5dfba001b6b57d99cbb00 *man/medAbsDev.Rd
 ae8b24ad33bec080d6e0fc0da3736c3c *man/normMinMax.Rd
-88067ad6591b52cff1abd12ab2ecf771 *man/piBloom.Rd
+31cb0d6c8e52a203ec45c1495928e04b *man/piBlom.Rd
 7b9ef3057b21a2e7a3ca47f6b2b68f10 *man/subCalcBoxAndCox.Rd
 b0dfd9249eb9e30e3111156d3e01129e *man/subCalcYeoAndJohnson.Rd
 e27c4e94d67d720ea3568eaab495ad3c *man/tokenization.Rd

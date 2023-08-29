@@ -1,4 +1,4 @@
-#' piBloom
+#' piBlom
 #'
 #' @param nameVect a vector
 #' @param sSize a number
@@ -8,8 +8,8 @@
 #'
 #' @examples
 #' vec=c(1,2,3)
-#' piBloom(vec, length(vec))
-piBloom=function(nameVect, sSize)
+#' piBlom(vec, length(vec))
+piBlom=function(nameVect, sSize)
 {
   for (j in 1:length(nameVect))
   {

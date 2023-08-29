@@ -22,7 +22,7 @@ BoxAndCox = function(rawVect, minLambda)
   sortedVect= sort(rawVect, decreasing = FALSE)
   indx = c(1:length(rawVect))
   actualLambda=minLambda
-  piBl = piBloom(indx, length(indx))
+  piBl = piBlom(indx, length(indx))
   qNrm = qnorm(piBl)
 
   while (actualLambda <= maxLambda)
