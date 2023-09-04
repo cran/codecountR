@@ -21,6 +21,7 @@ BoxAndCox
 vec=rlnorm(100, log(3), log(3))
 BandC=BoxAndCox(vec, -3)
 BandC
-BAC=unlist(BandC[3])
+BAC=unlist(BandC$par)
 BAC
+rawVectBCFinal=unlist(subCalcBoxAndCox(vec, BandC$par))
 }

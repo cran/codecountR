@@ -1,7 +1,7 @@
-8eb114d497e7124e48f3ec269ffe6a4e *DESCRIPTION
-864221570f6b58f96dce9ce6d57877fe *NAMESPACE
-734ba837a84af7a04834cec10dd5845b *R/BoxAndCox.R
-6fe6c1991b9a04f362482b23b86b757e *R/YeoAndJohnson.R
+8c3e7ebbf17e8605cde7982618db6319 *DESCRIPTION
+cea4b9303d62cca266dcd4d724fa319c *NAMESPACE
+40655be72e2c14a301e4efa676c058cd *R/BoxAndCox.R
+3d5db2879ca16adce1646915d0a9d257 *R/YeoAndJohnson.R
 1ed6e42e5f87d0c9f46d3d41b8a623cc *R/analysCodesLis.R
 1a26219eb23d479a9f739320b9cc370e *R/codeCount.R
 a872b3ddc20b5a65ccff54894064d9d6 *R/loadCodes.R
@@ -18,8 +18,8 @@ fc9b36217c8a04b3668a32ef61a673fd *inst/ExText.txt
 c7e9a704c0ba166ee46c371022836418 *inst/doc/How_to_use_this_package.R
 80dff3179bf88a3ee27082d5190bff77 *inst/doc/How_to_use_this_package.Rmd
 abb2a4be3f8b42d148921959c6e21798 *inst/doc/How_to_use_this_package.html
-c231d651427525f547a2d306d76473db *man/BoxAndCox.Rd
-7e93b9f0af3770b28d0f7d1641a44a7a *man/YeoAndJohnson.Rd
+fb92af6e91f24d36cf9974b466134196 *man/BoxAndCox.Rd
+639762c884f3c127d26553540cfdc2ec *man/YeoAndJohnson.Rd
 02d8895a7ccefadd6df6fc5cb2578d1b *man/analysCodesList.Rd
 71be5c744828849be7a059c0aaebc5d1 *man/codeCount.Rd
 86a30380e597c2984e448cb853df7fb8 *man/loadCodes.Rd

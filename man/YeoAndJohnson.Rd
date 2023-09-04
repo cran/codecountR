@@ -21,5 +21,6 @@ YeoAndJohnson
 vec=rlnorm(100, log(3), log(3))
 YandJ=YeoAndJohnson(vec, -3)
 YandJ
-YAJ=unlist(YandJ[3])
+YAJ=unlist(YandJ$par)
+rawVectYJFinal=unlist(subCalcYeoAndJohnson(vec, YandJ$par))
 }

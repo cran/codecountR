@@ -10,30 +10,26 @@
 #' vec=rlnorm(100, log(3), log(3))
 #' YandJ=YeoAndJohnson(vec, -3)
 #' YandJ
-#' YAJ=unlist(YandJ[3])
-
+#' YAJ=unlist(YandJ$par)
+#' rawVectYJFinal=unlist(subCalcYeoAndJohnson(vec, YandJ$par))
 YeoAndJohnson = function(rawVect, minLambda)
 {
-  indx = c(1:length(rawVect))
-  valCorel = c() #empty vector
-  Lambda = c() #empty vector
   maxLambda=abs(minLambda)
-  actualLambda=minLambda
+  indx = c(1:length(rawVect))
   piBl = piBlom(indx, length(indx))
   qNrm = qnorm(piBl)
-  sortedVect= sort(rawVect, decreasing = FALSE)
+  dat=sort(rawVect)
 
-  while (actualLambda <= maxLambda)
+
+  max.cor <- function(data, par)
   {
-    actualLambda=round(actualLambda, digits = 7) #prevent side effect
-    transformVec=subCalcYeoAndJohnson(sortedVect, actualLambda)
-    corVal= cor(transformVec, piBl)
-    Lambda=append(Lambda,actualLambda)
-    valCorel=append(valCorel,corVal)
-    actualLambda = actualLambda + 0.001
+    print(par)
+    sortedVectYJ=subCalcYeoAndJohnson(data, par)
+    resu=cor(sortedVectYJ, qNrm)
+    print(-resu)
+    return(-resu)
   }
-  dataFra= data.frame(Lambda, valCorel)
-  LambdaMaxCalc=dataFra[dataFra['valCorel']== max(valCorel)]
-  transformVecFinal=unlist(subCalcYeoAndJohnson(rawVect, LambdaMaxCalc[1]))
-  return (list(dataFra, LambdaMaxCalc, transformVecFinal,LambdaMaxCalc[1] ))
+
+  result <- optim(par = -3.0, fn = max.cor, data = dat, method = "Brent",lower = minLambda, upper = maxLambda)
+  return(result)
 }
