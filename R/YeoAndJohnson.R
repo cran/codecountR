@@ -30,6 +30,6 @@ YeoAndJohnson = function(rawVect, minLambda)
     return(-resu)
   }
 
-  result <- optim(par = -3.0, fn = max.cor, data = dat, method = "Brent",lower = minLambda, upper = maxLambda)
+  result <- optim(par = minLambda, fn = max.cor, data = dat, method = "Brent",lower = minLambda, upper = maxLambda)
   return(result)
 }

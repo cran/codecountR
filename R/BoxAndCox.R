@@ -7,6 +7,7 @@
 #' @importFrom stats cor
 #' @importFrom stats qnorm
 #' @importFrom stats optim
+#' @importFrom stats var
 #' @export
 #'
 #' @examples
@@ -19,21 +20,22 @@
 BoxAndCox = function(rawVect, minLambda)
 {
   maxLambda=abs(minLambda)
-  indx = c(1:length(rawVect))
-  piBl = piBlom(indx, length(indx))
-  qNrm = qnorm(piBl)
-  dat=sort(rawVect)
+  dat=rawVect
 
-
-  max.cor <- function(data, par)
+  max.LL <- function(data, par)
   {
-    print(par)
-    sortedVectBC=subCalcBoxAndCox(data, par)
-    resu=cor(sortedVectBC, qNrm)
-    print(-resu)
-    return(-resu)
+    N=length(data)
+    lambda=par
+    lambdadep=subCalcBoxAndCox(data, lambda)
+    lnVal=log(data)
+    sumLnVal=sum(lnVal)
+    s2=var(lambdadep)*(N-1)/N
+    soca= sum( (lambdadep - mean(lambdadep) )^2 )
+    LL=-(N/2)*log(s2)+(lambda-1)*sumLnVal
+    return(-LL)
   }
 
-  result <- optim(par = -3.0, fn = max.cor, data = dat, method = "Brent",lower = minLambda, upper = maxLambda)
+  result <- optim(par = minLambda, fn = max.LL, data = dat, method = "Brent",lower = minLambda, upper = maxLambda)
+  result$value=-(result$value)
   return(result)
 }
