@@ -1,5 +1,5 @@
-217c8146ded77f57ef1ce7447ab7fab9 *DESCRIPTION
-f24545100ed3c34d201e94339468b721 *NAMESPACE
+07de0a3b3febaf0aa22a20698e3a1ce9 *DESCRIPTION
+1c20c873da4f7689e78c9225d54057ef *NAMESPACE
 6f0adbaf0132871235c3069faeaf149f *R/BoxAndCox.R
 d4e8bd8cd14d1f10287264c451435dcd *R/BoxMullerGen.R
 1ed6e42e5f87d0c9f46d3d41b8a623cc *R/analysCodesLis.R
@@ -13,6 +13,7 @@ e2f8e7dfab257095e4b311b204c88029 *R/robustScal.R
 1dbb6dd29a321dcd539d1af49b353a8f *R/subCalcBoxAndCox.R
 b7d8c63654765f04167dc689a3d4ae4f *R/testPairs.R
 7f0db84e9d09862ff9e589474fe5072c *R/tokenization.R
+977ab638f10008d1e326ccaee9d9832b *R/verify.R
 a568e6585651bf5f8dc3bb53037706e8 *R/zScore.R
 0c606863655d87390b5041cf247ef626 *build/vignette.rds
 fc9b36217c8a04b3668a32ef61a673fd *inst/ExText.txt
@@ -33,5 +34,6 @@ c2f23efe0102fda948d7c8a1b29014c0 *man/robustScal.Rd
 7b9ef3057b21a2e7a3ca47f6b2b68f10 *man/subCalcBoxAndCox.Rd
 a00cb404bc90e0d93f0b6fbf1fb267ee *man/testPairs.Rd
 e27c4e94d67d720ea3568eaab495ad3c *man/tokenization.Rd
+965c874ebb931e1dd3db125d99350d94 *man/verify.Rd
 e88f8e4765169a62eb21bbaeabb60b93 *man/zScore.Rd
 80dff3179bf88a3ee27082d5190bff77 *vignettes/How_to_use_this_package.Rmd
